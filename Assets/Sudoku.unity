@@ -671,7 +671,7 @@ MonoBehaviour:
   canvas: {fileID: 266718778}
   feedback: {fileID: 482015749}
   stepDuration: 0.05
-  difficulty: 15
+  difficulty: 40
   customSize: 3
 --- !u!82 &1223573005
 AudioSource:
@@ -781,12 +781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a02ad32e0f91546974c9260663475e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabCell: {fileID: 11468018, guid: 55b88bfd94ba5204cbb65988bdb9fd68, type: 3}
-  canvas: {fileID: 266718778}
-  feedback: {fileID: 482015749}
-  stepDuration: 0.05
-  difficulty: 15
-  customSize: 3
 --- !u!1 &1371261416
 GameObject:
   m_ObjectHideFlags: 0

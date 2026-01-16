@@ -1,5 +1,7 @@
 ﻿static class Tests {
 	
+	// EJEMPLOS ANTES DE LA GENERACION ALEATORIA
+
 	//25 CASOS VALIDOS (PUEDEN NO ESTAR COMPLETOS, EL 0 ES "EMPTY")
 	static public int[][,] validBoards = new int[][,] {
 		  new int[,] {{0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,2,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0}}

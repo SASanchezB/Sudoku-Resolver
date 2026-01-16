@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-//IMPORTANTE: Esta clase esta completa, NO LA DEBE MODIFICAR -- USELA ASI
+//IMPORTANTE: Esta clase esta completa, NO LA MODIFIQUES -- USALA ASI
 public class Cell : MonoBehaviour {
 
 	public const int EMPTY = 0;
@@ -55,14 +55,13 @@ public class Cell : MonoBehaviour {
 			_image.color = Color.white;
 	}
 
-	// Use this for initialization
+	// inicializacion
 	void Awake() {
 		//label.text = "";
 		_image = GetComponent<Image>();
 		RefreshColor();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	
 	}

@@ -10,8 +10,8 @@ public class Sudoku : MonoBehaviour
     public Canvas canvas;
     public Text feedback;
     public float stepDuration = 0.05f;
-    [Range(1, 82)] public int difficulty = 40;
-    [Range(2, 3)] public int customSize = 3; //Tamano del sudoku custom (no implementado todavia)
+    [SerializeField] [Range(1, 82)] private int difficulty = 40;
+    [SerializeField][Range(2, 3)] private int customSize = 3; //Tamano del sudoku custom (dejarlo en 3)
 
     Matrix<Cell> _board;
     Matrix<int> _createdMatrix;
@@ -314,7 +314,7 @@ public class Sudoku : MonoBehaviour
         TranslateAllValues(_createdMatrix);
     }
 
-    //Hay algo aca que rompe el tamaño, seguramente tengo que rescribir esta funcion esta para que funque
+    //Hay algo aca que rompe el tamaño, seguramente tengo que rescribir esta funcion esta para que funque (si se deja en 3 funca joya)
     bool CanPlaceValue(Matrix<int> mtx, int value, int x, int y)
     {
         List<int> fila = new List<int>();
@@ -337,7 +337,7 @@ public class Sudoku : MonoBehaviour
         cuadrante.x = (int)(x / 3) * 3;
         cuadrante.y = (int)(y / 3) * 3;
 
-        // Obtener los valores del área
+        // Obtener los valores del area
         for (int i = (int)cuadrante.x; i < (int)cuadrante.x + 3; i++)
         {
             for (int j = (int)cuadrante.y; j < (int)cuadrante.y + 3; j++)
